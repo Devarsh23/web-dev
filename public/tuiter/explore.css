@@ -1,0 +1,209 @@
+.wd-margin-left {
+    margin-left: 16px;
+}
+.wd-bg-color-black
+{ background-color: black; }
+
+.wd-border { border-color: rgb(47,51,54); }
+.wd-border-solid { border-style: solid; }
+.wd-rounded-corners-all-around {
+    border-radius: 25px;
+}
+.wd-border-thin { border-width: 2px; }
+.wd-bg-color-search-color{background-color: rgb(47,51,54);}
+.wd-padded-left {
+    padding-left: 15px;
+}
+.wd-fg-color-white { color: white; }
+.wd-padded-right {
+    padding-right: 12px;
+}
+
+.wd-float-left {
+    float: left;
+}
+.wd-float-right {
+    float: right;
+    height: 35px;
+}
+.wd-min-height-150 {
+    height: 150px;
+}
+.wd-float-done {
+    clear: both;
+}
+.wd-big-icon {
+    font-size: 27px;
+}
+
+.wd-pos-relative-nudge-up {
+    position: relative;
+    bottom: 6px;
+}
+.wd-textarea {
+    border-style: none;
+    border-color: Transparent;
+    overflow: auto;
+}
+.wd-tab {
+    overflow: hidden;
+    background-color: black;
+    border: none;
+    font-size: 15px;
+    padding: 16px;
+    color: rgb(110, 118, 125);
+}
+.wd-tab button.active {
+    background-color: rgb(29,161,242);
+}
+
+.wd-tab button:hover {
+    background-color: rgb(47,51,54);
+}
+h1, h2, p{
+    margin: 0;
+}
+
+.wd-tab-highlight {
+    color: rgb(29,161,242);
+    font-size: 15px;
+    padding: 16px;
+    border: none;
+}
+.wd-tab-highlight::before{
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 50px;
+    left:42px;
+    top:50px;
+    border-bottom:3px solid rgb(29,161,242);
+}
+
+.wd-container {
+    display: flex;
+    align-items: center;
+}
+
+.wd-column-1 {
+    float: left;
+    width: 90%;
+    position: relative;
+    bottom: 30px;
+}
+.wd-column-2 {
+    float: right;
+    width: 10%;
+
+}
+.wd-grey-color {
+    color: rgb(110, 118, 125);
+    font-size: 13px
+}
+
+.wd-hr-line {
+    border: 0;
+    margin-left: -17px;
+    border-top: 1px solid rgb(47, 51, 54);
+    width: 101.45%;
+}
+.wd-title-size {
+    font-size: 15px;
+}
+.wd-padd-left {
+    padding-left: 16px;
+}
+.wd-padded-top {
+    padding-top: 12px;
+}
+.wd-bookmark-size {
+    font-size: 20px;
+}
+.wd-pad-bottom {
+    padding-bottom: 12px;
+}
+
+.wd-pad-right {
+    padding-right: 12px;
+}
+
+.wd-round-picture {
+    border-radius: 50%;
+
+}
+
+.wd-left12 {
+    padding-left: 12px;
+}
+
+.wd-pos-relative-up {
+    position: relative;
+    bottom: 33px;
+}
+
+
+.wd-pos-relative-left {
+    position: relative;
+    right: 235px;
+}
+
+.wd-pos-relative-nudge-up-content {
+    position: relative;
+    bottom: 12px;
+}
+.wd-width {
+    width: 506px;
+}
+
+
+.wd-container-book {
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+}
+
+.wd-align-left {
+    flex-basis : 10%;
+    padding-left: 16px;
+}
+
+.wd-align-right {
+    padding-left: 12px;
+    flex-flow: column wrap;
+}
+
+.wd-text {
+    flex: 0 0 10%
+}
+
+.wd-para {
+    flex: 0 0 30%;
+    width: 497px;
+}
+
+.wd-rounded-corners-top {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.wd-rounded-corners-bottom {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.wd-bor {
+    border: 1px solid rgb(47,51,54);
+    border-top: none;
+}
+
+.wd-g {
+    color: rgb(110,118,125);
+}
+
+.wd-red {
+    color: red;
+}
+
+.wd-equal {
+    padding-left: 25px;
+}
