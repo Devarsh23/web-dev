@@ -1,0 +1,104 @@
+.wd-rounded-corners-all-around {
+    border-radius: 25px;
+}
+.wd-size-xxl {
+    font-size: 18px;
+}
+
+/*.wd-size {*/
+/*    font-size: 12px;*/
+/*}*/
+
+.wd-padded-left {
+    padding-left: 15px;
+}
+.wd-padded-right {
+     padding-right: 15px;
+ }
+.wd-padded-top {
+      padding-top: 15px;
+  }
+.wd-padded-bottom {
+       padding-bottom: 15px;
+   }
+.list-group-item.dev {
+    padding: 0px 8px;
+    height: 50px;
+    font-size: medium;
+}
+.wd-more {
+    padding-top: 9px;
+    padding-left: 6px;
+}
+.wd-twitter-size {
+    font-size: 20px;
+}
+.btn-primary {
+    width:100%;
+}
+
+
+.btn-primary.override-bs {
+    width: 50%;
+}
+
+
+.wd-textarea {
+    border-style: none;
+    border-color: Transparent;
+    overflow: auto;
+    outline-width: 0;
+}
+
+.wd-round-picture {
+    border-radius: 50%;
+
+}
+
+.img-spacex {
+    width: 661px; /* You can set the dimensions to whatever you want */
+    object-fit: cover;
+}
+
+.maintxt1 {
+    position: relative;
+}
+.maintxt1 > img, .overlay-text {
+    position: absolute;
+}
+.overlay-text {padding: 290px 10px;}
+
+.wd-spacex-1 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-rounded-corners-logo {
+    border-radius: 15px;
+}
+
+.wd-l-size {
+    font-size: 15px;
+}
+
+.wd-bg-color-blue {
+    background-color: royalblue;
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+
+.wd-gear {
+    font-size: 28px;
+}
+
+
+.wd-back-black {
+    background-color: black;
+}
+
+.wd-fg-text-color {
+    color: white;
+}
