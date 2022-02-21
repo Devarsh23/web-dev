@@ -102,3 +102,48 @@
 .wd-fg-text-color {
     color: white;
 }
+
+.wd-bor {
+    border-color: white;
+}
+
+.wd-search-color {
+    background-color: rgb(20,23,26);
+}
+
+.wd-fg-search-color {
+    color: rgb(101,119,134);
+}
+
+.active.a {
+    background-color: black !important;
+}
+
+.wd-new-tab {
+    border-bottom: 2px solid royalblue !important;
+    border-radius: 3px;
+}
+
+.wd-table-bor {
+    border-color: rgb(20,23,26);
+}
+
+.wd-border-left-right {
+    border-left: rgb(20,23,26);
+    border-right: rgb(20,23,26);
+    border-top: none;
+    border-bottom: none;
+}
+
+.wd-follow-back {
+    background-color: white;
+}
+.wd-normal-text-color {
+    color: black;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: lightgray;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: lightgray;
+}
