@@ -48,6 +48,8 @@
     border-color: Transparent;
     overflow: auto;
     outline-width: 0;
+    caret-color: white;
+    outline: None;
 }
 
 .wd-round-picture {
@@ -146,4 +148,13 @@
 }
 ::-moz-placeholder { /* Firefox 19+ */
     color: lightgray;
+}
+
+.wd-check {
+    background-color: rgb(20,23,26);
+}
+
+.active {
+    font-weight: bold;
+    background-color: #0c63e4;
 }

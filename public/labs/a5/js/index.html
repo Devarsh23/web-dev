@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+
+<body>
+<a href="../../../index.html"></a>
+<h2>Embedded script tag</h2>
+<!--<script>-->
+<!--    alert('Hello World!');-->
+<!--</script>-->
+
+<h2>Writing to the DOM</h2>
+<script>
+    document.write('Welcome to JavaScript!')
+</script>
+
+<h2>Calculating an HTML string</h2>
+<script>
+    const renderTodos = (todos) => `
+            <ul>
+                ${todos.map(todo =>
+        `<li>${todo}</li>`
+    ).join('')}
+            </ul>`;
+    const todos = ['Pickup kids', 'Feed dogs']
+    let html = renderTodos(todos);
+    document.write(html);
+</script>
+
+<h2 id="bind-by-id">
+    Binding by ID</h2>
+<h3 class="bind-by-class">
+    Binding 1 by Class</h3>
+<h3 class="bind-by-class">
+    Binding 2 by Class</h3>
+
+
+<h2 id="change-style">
+    Change style</h2>
+<h3 class="change-style">
+    Change style 1</h3>
+<h3 class="change-style">
+    Change style 2</h3>
+
+
+<h2 id="get-id-attr">
+    Get id attribute
+</h2>
+
+<h2 id="set-class-attr">Set class attribute</h2>
+
+<h2 id="add-class-1">Add class</h2>
+
+<h2 id="remove-class-1" class="class-2">
+    Remove class
+</h2>
+
+<h2 id="hide-me">Hide me</h2>
+
+<h2 id="show-me" class="im-hidden">Show me</h2>
+
+<h2>Appending new elements</h2>
+<ul id="append-new-elements">
+</ul>
+
+<h2>Removing elements</h2>
+<ul>
+    <li>Line item 1</li>
+    <li>Line item 2</li>
+    <li id="remove-this">Line item 3</li>
+    <li>Line item 4</li>
+    <li>Line item 5</li>
+</ul>
+
+<h2>Emptying elements</h2>
+<ul id="empty-this">
+    <li>Line item A</li>
+    <li>Line item B</li>
+    <li>Line item C</li>
+    <li>Line item D</li>
+    <li>Line item E</li>
+</ul>
+
+
+<h2>Change content</h2>
+<p id="change-this-text">
+    Change me
+</p>
+<ul id="change-this-html">
+</ul>
+
+<h2>Navigating the
+    DOM hierarchy</h2>
+<div id="parent">
+    This is the parent DIV
+    <ul>
+        <li>Child 1</li>
+        <li id="child-2">Child 2</li>
+        <li>Child 3</li>
+    </ul>
+</div>
+
+<h2>Event handling</h2>
+<h2 class="clickable">
+    Click event</h2>
+<p class="clickable">
+    Anything can be clickable</p>
+<button class="clickable">
+    Not just me</button>
+
+<h2 id="event-target">
+    Event target
+</h2>
+
+<h3 id="hide-show">
+    Hi/show element
+</h3>
+
+<button id="hide">
+    Hide
+</button>
+
+<button id="show">
+    Show
+</button>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
