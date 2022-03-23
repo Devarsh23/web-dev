@@ -2,7 +2,7 @@ import React from "react";
 
 import {Link} from "react-router-dom";
 import ExploreScreen from "./ExploreScreen/explorescreen"
-//import HomeScreen from "./HomeScreen/homescreen";
+import HomeScreen from "./HomeScreen/HomeScreen";
 
 
 const Index = () => {
@@ -15,8 +15,8 @@ const Index = () => {
             {/*<Link to="/">*/}
             {/*    Labs*/}
             {/*</Link>*/}
-            <ExploreScreen/>
-            {/*<HomeScreen/>*/}
+            {/*<ExploreScreen/>*/}
+            <HomeScreen/>
         </>
     )
 };

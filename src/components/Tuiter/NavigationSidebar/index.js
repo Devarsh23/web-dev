@@ -1,79 +1,120 @@
 import React from "react";
+import {Link} from "react-router-dom";
 const NavigationSidebar = (
     {
-        active
+        active, size
     }) => {
-    if (active === "explore") {
-
+    console.log(size)
+    if (size === "xl") {
         return (
             <>
-            <div className="list-group">
-                <a className="list-group-item" href="/">
-                    <i className="fab fa-twitter"></i></a>
-                <a className="list-group-item list-group-item-action" href="../HomeScreen/home.html" id = "one">
-                    <i className="fa fa-home"></i>  Home</a>
-                <a className="list-group-item  list-group-item-action active" href="../ExploreScreen/explore.html" id = "two" >
-                    <i className="fa fa-hashtag"></i>  Explore</a>
-                <a className="list-group-item list-group-item-action" href="/" >
-                    <i className="far fa-bell"></i>  Notifications</a>
-                <a className="list-group-item list-group-item-action" href="/" >
-                    <i className="far fa-envelope"></i>  Messages</a>
-                <a className="list-group-item list-group-item-action" href="/" >
-                    <i className="far fa-bookmark"></i>  Bookmarks</a>
-                <a className="list-group-item list-group-item-action" href="/" >
-                    <i className="fa fa-list"></i>  Lists</a>
-                <a className="list-group-item list-group-item-action" href="/" >
-                    <i className="far fa-user"></i>  Profile</a>
-                <a className="list-group-item list-group-item-action" href="/" >
+                <div className="list-group">
+                    <Link to="/" className="list-group-item" href="/">
+                        <i className="fab fa-twitter"></i></Link>
+                    <Link to="/tuiter/home"
+                          className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
+                        <i className="fa fa-home"></i> Home</Link>
+                    <Link to="/tuiter/explore"
+                          className={`list-group-item  list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
+                        <i className="fa fa-hashtag"></i> Explore</Link>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-bell"></i> Notifications</a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-envelope"></i> Messages</a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-bookmark"></i> Bookmarks</a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="fa fa-list"></i> Lists</a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-user"></i> Profile</a>
+                    <a className="list-group-item list-group-item-action" href="/">
                 <span className="fa-stack">
                     <i className="far fa-circle fa-stack-2x fa-inverse"></i>
                             <i className="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i></span>More</a>
-               
-            </div>
-            <div className="d-grid mt-2">
-                <a href="tweet.html"
-                   className="btn btn-primary btn-block rounded-pill">
-                    Tweet</a>
-            </div>
-                </>
-    );
+
+                </div>
+                <div className="d-grid mt-2">
+                    <a href="tweet.html"
+                       className="btn btn-primary btn-block rounded-pill">
+                        Tweet</a>
+                </div>
+            </>
+        );
     }
-    else {
+    else if (size === "l") {
         return (
             <>
-            <div className="list-group">
-                <a className="list-group-item" href="/">
-                    <i className="fab fa-twitter"></i></a>
-
-                <a className="list-group-item list-group-item-action active" href="../HomeScreen/home.html" id = "one">
-                    <i className="fa fa-home"></i>  Home</a>
-                <a className="list-group-item  list-group-item-action" href="../ExploreScreen/explore.html" id = "two" >
-                    <i className="fa fa-hashtag"></i>  Explore</a>
-                <a className="list-group-item list-group-item-action" href="/" >
-                    <i className="far fa-bell"></i>  Notifications</a>
-                <a className="list-group-item list-group-item-action" href="/" >
-                    <i className="far fa-envelope"></i>  Messages</a>
-                <a className="list-group-item list-group-item-action" href="/" >
-                    <i className="far fa-bookmark"></i>  Bookmarks</a>
-                <a className="list-group-item list-group-item-action" href="/" >
-                    <i className="fa fa-list"></i>  Lists</a>
-                <a className="list-group-item list-group-item-action" href="/" >
-                    <i className="far fa-user"></i>  Profile</a>
-                <a className="list-group-item list-group-item-action" href="/" >
+                <div className="list-group">
+                    <Link to="/" className="list-group-item" href="/">
+                        <i className="fab fa-twitter"></i></Link>
+                    <Link to="/tuiter/home"
+                          className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
+                        <i className="fa fa-home"></i></Link>
+                    <Link to="/tuiter/explore"
+                          className={`list-group-item  list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
+                        <i className="fa fa-hashtag"></i></Link>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-bell"></i></a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-envelope"></i></a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-bookmark"></i></a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="fa fa-list"></i></a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-user"></i></a>
+                    <a className="list-group-item list-group-item-action" href="/">
                 <span className="fa-stack">
                     <i className="far fa-circle fa-stack-2x fa-inverse"></i>
-                            <i className="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i></span>More</a>
-               
-            </div>
-            <div className="d-grid mt-2">
-                <a href="tweet.html"
-                   className="btn btn-primary btn-block rounded-pill">
-                    Tweet</a>
-            </div>           
+                            <i className="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i></span></a>
 
-    </>
-    );
+                </div>
+                <div className="d-grid mt-2">
+                    <a href="tweet.html"
+                       className="btn btn-primary btn-block rounded-pill">
+                        Tweet</a>
+                </div>
+            </>
+        );
+
     }
+    else if(size === "m") {
+        return (
+            <>
+                <div className="list-group">
+                    <Link to="/" className="list-group-item" href="/">
+                        <i className="fab fa-twitter"></i></Link>
+                    <Link to="/tuiter/home"
+                          className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
+                        <i className="fa fa-home"></i></Link>
+                    <Link to="/tuiter/explore"
+                          className={`list-group-item  list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
+                        <i className="fa fa-hashtag"></i></Link>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-bell"></i></a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-envelope"></i></a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-bookmark"></i></a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="fa fa-list"></i></a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                        <i className="far fa-user"></i> </a>
+                    <a className="list-group-item list-group-item-action" href="/">
+                <span className="fa-stack">
+                    <i className="far fa-circle fa-stack-2x fa-inverse"></i>
+                            <i className="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i></span></a>
+
+                </div>
+                <div className="d-grid mt-2">
+                    <a href="tweet.html"
+                       className="btn btn-primary btn-block rounded-pill">
+                        Tweet</a>
+                </div>
+            </>
+        );
+    }
+
 
 
 }
