@@ -10,20 +10,23 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import HomeScreen from "./components/Tuiter/HomeScreen/HomeScreen";
 import ExploreScreen from "./components/Tuiter/ExploreScreen/explorescreen";
 import Hello from "./components/Labs/redux-examples/reducers/hello";
+import ProfileScreen from "./components/Tuiter/Profile";
 
 function App() {
   return (
+
 
       <BrowserRouter>
           <div className="container">
           <Routes>
               <Route path = "/">
-                  <Route index element = {<Labs/>}></Route>
-                  <Route path = "labs" exact={true} element={<Labs/>}></Route>
-                  <Route path = "hello" element = {<HelloWorld/>}></Route>
+                  <Route index element = {<Labs/>}/>
+                  <Route path = "labs" exact={true} element={<Labs/>}/>
+                  <Route path = "hello" element = {<HelloWorld/>}/>
                   <Route path="tuiter" element = {<Index/>}>
-                      <Route index element = {<HomeScreen/>}></Route>
-                      <Route path = "explore" element = {<ExploreScreen/>}></Route>
+                      <Route index element = {<HomeScreen/>}/>
+                      <Route path = "explore" element = {<ExploreScreen/>}/>
+                      <Route path = "profile" element = {<ProfileScreen/>}/>
                   </Route>
               </Route>
           </Routes>

@@ -13,6 +13,7 @@ import whoReducer from "./reducers/who-reducer";
 import {Provider} from "react-redux";
 import tuitsReducer from "./reducers/tuit-reducer";
 import {combineReducers, createStore} from "redux";
+import Profile from "./Profile";
 // const store = createStore(whoReducer);
 const reducer = combineReducers({
     tuits: tuitsReducer, who: whoReducer
@@ -24,29 +25,21 @@ const store = createStore(reducer);
 const Index = () => {
     return(
         <>
-            {/*<h1>Tuiter</h1>*/}
-            {/*<Link to="/hello">*/}
-            {/*    Hello*/}
-            {/*</Link> |*/}
-            {/*<Link to="/">*/}
-            {/*    Labs*/}
-            {/*</Link>*/}
-            {/*<ExploreScreen/>*/}
-            {/*<HomeScreen/>*/}
             <Provider store={store}>
-
-            <div className="row mt-2">
-                <div className="col-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar/>
-                </div>
-                <div className="col-10 col-lg-7 col-xl-6">
-                    {/*<Outlet/>*/}
-                    <HomeScreen/>
-                </div>
-                <div className="d-none d-lg-block col-lg-4 col-xl-4">
-                    <WhoToFollowList/>
-                </div>
-            </div>
+            <Outlet/>
+            {/*<div className="row mt-2">*/}
+            {/*    <div className="col-2 col-lg-1 col-xl-2">*/}
+            {/*        <NavigationSidebar/>*/}
+            {/*    </div>*/}
+            {/*    <div className="col-10 col-lg-7 col-xl-6">*/}
+            {/*        /!*<Outlet/>*!/*/}
+            {/*        /!*<HomeScreen/>*!/*/}
+            {/*        <Profile/>*/}
+            {/*    </div>*/}
+            {/*    /!*<div className="d-none d-lg-block col-lg-4 col-xl-4">*!/*/}
+            {/*    /!*    <WhoToFollowList/>*!/*/}
+            {/*    /!*</div>*!/*/}
+            {/*</div>*/}
             </Provider>
 
         </>

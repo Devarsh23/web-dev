@@ -4,14 +4,14 @@ const NavigationSidebar = (
     {
         active, size
     }) => {
-    console.log(size)
+    console.log(active)
     if (size === "xl") {
         return (
             <>
                 <div className="list-group">
                     <Link to="/" className="list-group-item" href="/">
                         <i className="fab fa-twitter"></i></Link>
-                    <Link to="/tuiter/home"
+                    <Link to="/tuiter"
                           className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
                         <i className="fa fa-home"></i> Home</Link>
                     <Link to="/tuiter/explore"
@@ -25,8 +25,11 @@ const NavigationSidebar = (
                         <i className="far fa-bookmark"></i> Bookmarks</a>
                     <a className="list-group-item list-group-item-action" href="/">
                         <i className="fa fa-list"></i> Lists</a>
-                    <a className="list-group-item list-group-item-action" href="/">
-                        <i className="far fa-user"></i> Profile</a>
+                    <Link to="/tuiter/profile"
+                          className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
+                        <i className="fa fa-user"></i> Profile</Link>
+                    {/*<a className="list-group-item list-group-item-action" href="/">*/}
+                    {/*    <i className="far fa-user"></i> Profile</a>*/}
                     <a className="list-group-item list-group-item-action" href="/">
                 <span className="fa-stack">
                     <i className="far fa-circle fa-stack-2x fa-inverse"></i>
@@ -47,7 +50,7 @@ const NavigationSidebar = (
                 <div className="list-group">
                     <Link to="/" className="list-group-item" href="/">
                         <i className="fab fa-twitter"></i></Link>
-                    <Link to="/tuiter/home"
+                    <Link to="/tuiter"
                           className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
                         <i className="fa fa-home"></i></Link>
                     <Link to="/tuiter/explore"
@@ -61,8 +64,11 @@ const NavigationSidebar = (
                         <i className="far fa-bookmark"></i></a>
                     <a className="list-group-item list-group-item-action" href="/">
                         <i className="fa fa-list"></i></a>
-                    <a className="list-group-item list-group-item-action" href="/">
-                        <i className="far fa-user"></i></a>
+                    <Link to="/tuiter/profile"
+                          className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
+                        <i className="fa fa-user"></i></Link>
+                    {/*<a className="list-group-item list-group-item-action" href="/">*/}
+                    {/*    <i className="far fa-user"></i></a>*/}
                     <a className="list-group-item list-group-item-action" href="/">
                 <span className="fa-stack">
                     <i className="far fa-circle fa-stack-2x fa-inverse"></i>
@@ -84,7 +90,7 @@ const NavigationSidebar = (
                 <div className="list-group">
                     <Link to="/" className="list-group-item" href="/">
                         <i className="fab fa-twitter"></i></Link>
-                    <Link to="/tuiter/home"
+                    <Link to="/tuiter"
                           className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
                         <i className="fa fa-home"></i></Link>
                     <Link to="/tuiter/explore"
@@ -134,8 +140,11 @@ const NavigationSidebar = (
                         <i className="far fa-bookmark"></i> Bookmarks</a>
                     <a className="list-group-item list-group-item-action" href="/">
                         <i className="fa fa-list"></i> Lists</a>
-                    <a className="list-group-item list-group-item-action" href="/">
-                        <i className="far fa-user"></i> Profile</a>
+                    <Link to="/tuiter/profile"
+                          className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
+                        <i className="fa fa-user"></i> Profile</Link>
+                    {/*<a className="list-group-item list-group-item-action" href="/">*/}
+                    {/*    <i className="far fa-user"></i> Profile</a>*/}
                     <a className="list-group-item list-group-item-action" href="/">
                 <span className="fa-stack">
                     <i className="far fa-circle fa-stack-2x fa-inverse"></i>

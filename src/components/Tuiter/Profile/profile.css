@@ -1,0 +1,24 @@
+.wd-white {
+    color: white;
+}
+.wd-font-tweets {
+    font-size: 15px;
+}
+.wd-wi {
+    width: 100%;
+}
+.wd-overlay {
+    position: relative;
+    bottom: 90px;
+    left: 20px;
+}
+.wd-container {
+    position: absolute;
+}
+.wd-boxborder-me {
+    box-shadow: 0 0 0 5px;
+    color: black;
+}
+.wd-color-grey{
+    color: grey;
+}
