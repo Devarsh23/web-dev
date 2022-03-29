@@ -7,7 +7,7 @@ import HelloWorld from "./components/hello-world"
 import Labs from "./components/Labs/index";
 import Index from "./components/Tuiter/index";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import HomeScreen from "./components/Tuiter/HomeScreen/HomeScreen";
+import HomeScreen from "./components/Tuiter/home-screen";
 import ExploreScreen from "./components/Tuiter/ExploreScreen/explorescreen";
 import Hello from "./components/Labs/redux-examples/reducers/hello";
 import ProfileScreen from "./components/Tuiter/Profile";
