@@ -1,0 +1,167 @@
+.wd-rounded-corners-all-around {
+    border-radius: 25px;
+}
+.wd-rounded-corners-all-around-video {
+    border-radius: 18px;
+}
+
+.wd-size-xxl {
+    font-size: 18px;
+}
+
+/*.wd-size {*/
+/*    font-size: 12px;*/
+/*}*/
+
+.wd-padded-left {
+    padding-left: 15px;
+}
+.wd-padded-right {
+     padding-right: 15px;
+ }
+.wd-padded-top {
+      padding-top: 15px;
+  }
+.wd-padded-bottom {
+       padding-bottom: 15px;
+   }
+.list-group-item.dev {
+    padding: 0px 8px;
+    height: 50px;
+    font-size: medium;
+}
+.wd-more {
+    padding-top: 9px;
+    padding-left: 6px;
+}
+.wd-twitter-size {
+    font-size: 20px;
+}
+.btn-primary {
+    width:100%;
+}
+
+
+.btn-primary.override-bs {
+    width: 50%;
+}
+
+
+.wd-textarea {
+    border-style: none;
+    border-color: Transparent;
+    overflow: auto;
+    outline-width: 0;
+    caret-color: white;
+    outline: None;
+}
+
+.wd-round-picture {
+    border-radius: 50%;
+
+}
+
+.img-spacex {
+    width: 661px; /* You can set the dimensions to whatever you want */
+    object-fit: cover;
+}
+
+.maintxt1 {
+    position: relative;
+}
+.maintxt1 > img, .overlay-text {
+    position: absolute;
+}
+.overlay-text {padding: 290px 10px;}
+
+.wd-spacex-1 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-rounded-corners-logo {
+    border-radius: 15px;
+}
+
+.wd-l-size {
+    font-size: 15px;
+}
+
+.wd-bg-color-blue {
+    background-color: royalblue;
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+
+.wd-gear {
+    font-size: 28px;
+}
+
+
+.wd-back-black {
+    background-color: black;
+}
+
+.wd-fg-text-color {
+    color: white;
+}
+
+.wd-bor {
+    border-color: white;
+}
+
+.wd-search-color {
+    background-color: rgb(20,23,26);
+}
+
+.wd-fg-search-color {
+    color: rgb(101,119,134);
+}
+
+.active.a {
+    background-color: black !important;
+}
+
+.wd-new-tab {
+    border-bottom: 2px solid royalblue !important;
+    border-radius: 3px;
+}
+
+.wd-table-bor {
+    border-color: rgb(20,23,26);
+}
+
+.wd-border-left-right {
+    border-left: rgb(20,23,26);
+    border-right: rgb(20,23,26);
+    border-top: none;
+    border-bottom: none;
+}
+
+.wd-follow-back {
+    background-color: white;
+}
+.wd-normal-text-color {
+    color: black;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: lightgray;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: lightgray;
+}
+
+.wd-check {
+    background-color: rgb(20,23,26);
+}
+
+.active {
+    font-weight: bold;
+    background-color: #0c63e4;
+}
+
+.wd-notify {
+    font-size: 14px;}
