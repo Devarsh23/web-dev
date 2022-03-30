@@ -1,5 +1,10 @@
+import React from "react";
+import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+
 import "./profile.css"
 const ProfileComponent = ({profile}) => {
+    const navigate = useNavigate();
     return(
         <>
             <div className="row">
@@ -11,7 +16,7 @@ const ProfileComponent = ({profile}) => {
                     <label>
                         <b className="wd-white">
                             {/*Devarsh Patel*/}
-                            {profile.firstName} {profile.lastName}
+                            {profile.name}
                         </b>
                         <br></br>
                         <label className="wd-font-tweets">
@@ -21,18 +26,18 @@ const ProfileComponent = ({profile}) => {
                 </div>
             </div>
             <div className="wd-container">
-                <label className="pe-1">
-                <img src = {profile.bannerPicture} className="wd-wi"></img>
-                </label>
+                <img src = {profile.bannerPicture} className="img-fluid wd-wi"></img>
                 <img src = {profile.profilePicture} className="wd-boxborder-me rounded-pill wd-overlay"></img>
                 <label className="float-end me-5 mt-3 wd-button-size">
-                <button type="button" className="btn rounded-pill border-secondary"><h5 className="pt-1">Edit Profile</h5></button>
+                <button type="button" className="btn rounded-pill border-secondary"
+                onClick={() => navigate("/tuiter/editprofile")}><h5 className="pt-1">Edit Profile</h5></button>
                 </label>
             </div>
             <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+            <br></br>
             <div className="pt-1">
-            <h5> {profile.firstName} {profile.lastName}</h5>
+            <h5> {profile.name}</h5>
                 <label className="wd-color-grey"> @ {profile.handle}</label> <br></br>
                 <label className="wd-white">
                     {profile.bio}

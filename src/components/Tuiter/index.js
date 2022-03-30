@@ -7,7 +7,7 @@ import {Outlet} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList"
 import HomeScreen from "./home-screen"
-
+import profileReducer from "./reducers/profile-reducer";
 import whoReducer from "./reducers/who-reducer";
 // import {createStore} from "redux";
 import {Provider} from "react-redux";
@@ -16,7 +16,7 @@ import {combineReducers, createStore} from "redux";
 import Profile from "./Profile";
 // const store = createStore(whoReducer);
 const reducer = combineReducers({
-    tuits: tuitsReducer, who: whoReducer
+    tuits: tuitsReducer, who: whoReducer, profile: profileReducer
 });
 const store = createStore(reducer);
 

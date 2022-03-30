@@ -11,6 +11,7 @@ import HomeScreen from "./components/Tuiter/home-screen";
 import ExploreScreen from "./components/Tuiter/ExploreScreen/explorescreen";
 import Hello from "./components/Labs/redux-examples/reducers/hello";
 import ProfileScreen from "./components/Tuiter/Profile";
+import EditprofileScreen from "./components/Tuiter/EditProfile";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                       <Route index element = {<HomeScreen/>}/>
                       <Route path = "explore" element = {<ExploreScreen/>}/>
                       <Route path = "profile" element = {<ProfileScreen/>}/>
+                      <Route path = "editprofile" element = {<EditprofileScreen/>}/>
                   </Route>
               </Route>
           </Routes>

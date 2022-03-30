@@ -104,8 +104,9 @@ const NavigationSidebar = (
                         <i className="far fa-bookmark"></i></a>
                     <a className="list-group-item list-group-item-action" href="/">
                         <i className="fa fa-list"></i></a>
-                    <a className="list-group-item list-group-item-action" href="/">
-                        <i className="far fa-user"></i> </a>
+                    <Link to="/tuiter/profile"
+                          className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
+                        <i className="fa fa-user"></i></Link>
                     <a className="list-group-item list-group-item-action" href="/">
                 <span className="fa-stack">
                     <i className="far fa-circle fa-stack-2x fa-inverse"></i>

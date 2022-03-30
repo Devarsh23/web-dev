@@ -10,7 +10,7 @@ const PostSummaryListItem = ({post =
 }) => {
     return(
         <>
-<div className=" ps-2 pt-2 pb-2">
+<div className=" ps-2 pt-2 pb-2" style={{backgroundColor : "#14171A"}}>
 <div className="row">
                     <div className="col-9">
                         <label className="text-muted">{post.topic}</label><br></br>

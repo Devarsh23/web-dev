@@ -84,11 +84,11 @@ const HomeScreen = () => {
                 <WhatsHappening/>
                 <TuitList/>
             </div>
-            <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                <label className="wd-search-color1">
-                    <WhoToFollowList/>
-                </label>
-            </div>
+            {/*<div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">*/}
+            {/*    <label className="wd-search-color1">*/}
+            {/*        <WhoToFollowList/>*/}
+            {/*    </label>*/}
+            {/*</div>*/}
         </div>
     </div>
     <div className="d-block d-sm-none">
@@ -101,11 +101,11 @@ const HomeScreen = () => {
                 <WhatsHappening/>
                 <TuitList/>
             </div>
-            <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                <label className="wd-search-color1">
-                    <WhoToFollowList/>
-                </label>
-            </div>
+            {/*<div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">*/}
+            {/*    <label className="wd-search-color1">*/}
+            {/*        <WhoToFollowList/>*/}
+            {/*    </label>*/}
+            {/*</div>*/}
         </div>
     </div>
 

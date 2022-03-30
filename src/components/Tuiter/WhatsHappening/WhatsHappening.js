@@ -35,7 +35,7 @@ const WhatsHappening = () => {
                     <i className="ps-3 far fa-calendar" style={{color:'#1DA1F2'}}></i>
                 </div>
                 <div className="col-2">
-                    <button onClick={tuitClickHandler} className="btn btn-primary rounded-pill mt-1">Tuit</button>
+                    <button onClick={tuitClickHandler} className="btn btn-primary rounded-pill mt-1 img-fluid">Tuit</button>
                 </div>
             </div>
         </>
