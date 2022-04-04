@@ -1,9 +1,13 @@
 import React, {useState} from "react";
 import "./WhatsHappening.css";
 import {useDispatch} from "react-redux";
-
+import {
+    createTuit
+} from "../actions/tuits-actions";
 
 const WhatsHappening = () => {
+    const [newTuit, setNewTuit] =
+        useState({tuit: 'New tuit'});
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
 
@@ -19,7 +23,10 @@ const WhatsHappening = () => {
                     <img src="/tuiter/images/elon.jpg" className="rounded-pill"></img>
                 </div>
                 <div className="d-flex flex-column ps-3 me-3 col-11">
-                  <textarea value={whatsHappening} onChange={(event) => setWhatsHappening(event.target.value)}
+                  <textarea  onChange={(e) =>
+                      setNewTuit({...newTuit,
+                          tuit: e.target.value})}
+                              className=""
                             style={{width: "100%", color: "white", padding: "0px", backgroundColor: "black"}}
                             placeholder="What's happening?">
                   </textarea>
@@ -35,7 +42,9 @@ const WhatsHappening = () => {
                     <i className="ps-3 far fa-calendar" style={{color:'#1DA1F2'}}></i>
                 </div>
                 <div className="col-2">
-                    <button onClick={tuitClickHandler} className="btn btn-primary rounded-pill mt-1 img-fluid">Tuit</button>
+                    <button onClick={() =>
+                        createTuit(dispatch, newTuit)}
+                            className="btn btn-primary rounded-pill mt-1 img-fluid">Tuit</button>
                 </div>
             </div>
         </>

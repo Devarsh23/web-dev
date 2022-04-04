@@ -1,18 +1,23 @@
 import "./explore1.css"
-import React from "react";
+import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "../TuitStats/tuit-stats";
-const TuitListItem = ({tuit}) => {
-    const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
+import {createTuit,deleteTuit, findAllTuits, updateTuit}
+    from "../actions/tuits-actions";
 
+const TuitListItem = ({tuit}) => {
+    // console.log(tuit);
+    const dispatch = useDispatch();
+    // const deleteTuit = (tuit) => {
+    //     dispatch({type: 'delete-tuit', tuit})
+    // };
+    const [newTuit, setNewTuit] =
+        useState({tuit: 'New tuit'});
     return(
         // <h1> Hello </h1>
     <div className="row pt-2 pb-2 border-bottom border-secondary">
         <div className="col-1">
-            <img src={tuit['logo-image']} className="wd-round-picture "></img>
+            <img src={tuit['logoImage']} className="wd-round-picture "></img>
         </div>
         <div className="col-10 ps-4">
             <label className="wd-fg-color-white">{tuit.handle}</label>
@@ -38,11 +43,27 @@ const TuitListItem = ({tuit}) => {
 
             <div className="pt-2">
                 <i className="far fa-comment"></i>
-                <label className="wd-comment-text me-5">&nbsp;{tuit.stats.comments}</label>
+                <label className="wd-comment-text me-2">&nbsp;{tuit.stats.comments}</label>
                 <i className="fas fa-retweet ps-3"></i>
                 <label className="wd-comment-text me-3">&nbsp;{tuit.stats.retuits}</label>
-                <TuitStats tuit={tuit}/>
-                <i className="fas fa-external-link-alt ps-5"></i>
+                {/*<TuitStats tuit={tuit}/>*/}
+                <label>
+                        Likes: {tuit.likes}
+                        <i onClick={() => updateTuit(dispatch, {
+                            ...tuit,
+                            likes: tuit.likes + 1
+                        })} className="far fa-thumbs-up me-3 ms-2"></i>
+
+                </label>
+                <label>
+                    Dis Likes: {tuit.dislikes}
+                    <i onClick={() => updateTuit(dispatch, {
+                        ...tuit,
+                        dislikes: tuit.dislikes + 1
+                    })} className="far fa-thumbs-down ms-2 me-2"></i>
+
+                </label>
+                <i className="fas fa-external-link-alt ps-2"></i>
             </div>
             {/*<div className="pt-2">*/}
             {/*    <label>*/}
@@ -72,7 +93,9 @@ const TuitListItem = ({tuit}) => {
 
         </div>
         <div className="col-1">
-            <i onClick={() => deleteTuit(tuit)} className="fa">&#xf00d;</i>
+            <i onClick={() => deleteTuit(
+                dispatch, tuit)} className="fa">&#xf00d;</i>
+            {/*<i onClick={() => deleteTuit(tuit)} className="fa">&#xf00d;</i>*/}
             {/*<i className="fa fa-remove fa-pull-right"></i>*/}
             {/*<i className="fa fa-icon-remove-sign"></i>*/}
             {/*<i className="fa fa-ellipsis-h"></i>*/}
