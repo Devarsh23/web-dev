@@ -3,4 +3,4 @@
   url = git://github.com/Devarsh23/full-stack-developer-server-de.git
 [submodule "full-stack-developer-server-node-de"]
 	path = full-stack-developer-server-node-de
-	url = git://github.com/Devarsh23/full-stack-developer-server-de.git
+	url = https://github.com/Devarsh23/full-stack-developer-server-de.git
