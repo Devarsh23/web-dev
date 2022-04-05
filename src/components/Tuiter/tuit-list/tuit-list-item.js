@@ -56,7 +56,7 @@ const TuitListItem = ({tuit}) => {
 
                 </label>
                 <label>
-                    Dis Likes: {tuit.dislikes}
+                    Dislikes: {tuit.dislikes}
                     <i onClick={() => updateTuit(dispatch, {
                         ...tuit,
                         dislikes: tuit.dislikes + 1
