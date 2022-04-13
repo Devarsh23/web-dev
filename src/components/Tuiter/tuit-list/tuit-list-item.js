@@ -6,7 +6,7 @@ import {createTuit,deleteTuit, findAllTuits, updateTuit}
     from "../actions/tuits-actions";
 
 const TuitListItem = ({tuit}) => {
-    // console.log(tuit);
+    //console.log(tuit);
     const dispatch = useDispatch();
     // const deleteTuit = (tuit) => {
     //     dispatch({type: 'delete-tuit', tuit})
@@ -21,7 +21,7 @@ const TuitListItem = ({tuit}) => {
         </div>
         <div className="col-10 ps-4">
             <label className="wd-fg-color-white">{tuit.handle}</label>
-            <label className="text-muted">&nbsp; @{tuit.postedBy.username} </label>
+            <label className="text-muted">&nbsp; @{tuit?.postedBy?.username} </label>
             <br></br>
             <label className="wd-fg-color-white"> {tuit.tuit} </label>
         {
@@ -43,9 +43,9 @@ const TuitListItem = ({tuit}) => {
 
             <div className="pt-2">
                 <i className="far fa-comment"></i>
-                <label className="wd-comment-text me-2">&nbsp;{tuit.stats.comments}</label>
+                <label className="wd-comment-text me-2">&nbsp;{tuit?.stats?.comments}</label>
                 <i className="fas fa-retweet ps-3"></i>
-                <label className="wd-comment-text me-3">&nbsp;{tuit.stats.retuits}</label>
+                <label className="wd-comment-text me-3">&nbsp;{tuit?.stats?.retuits}</label>
                 {/*<TuitStats tuit={tuit}/>*/}
                 <label>
                         Likes: {tuit.likes}
